@@ -24,7 +24,7 @@ jobs:
       with:
         name: standalone_keycloak_theme
         path: build_keycloak/target/*keycloak-theme*.jar
-    - run: npx build-keycloak-theme --external-assets
+    - run: npx build-keycloak-theme
     - uses: actions/upload-artifact@v2
       with:
         name: keycloak_theme
